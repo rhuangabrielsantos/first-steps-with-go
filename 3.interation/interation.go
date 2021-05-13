@@ -1,11 +1,11 @@
 package interation
 
-func Repeater(character string) string {
-	var repetitions string
+func Repeater(character string, repetitions int) string {
+	var result string
 
-	for i := 0; i < 5; i++ {
-		repetitions += character
+	for i := 0; i < repetitions; i++ {
+		result += character
 	}
 
-	return repetitions
+	return result
 }

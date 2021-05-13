@@ -12,9 +12,16 @@ func TestInteraction(t *testing.T) {
 		}
 	}
 
-	t.Run("given one character, should return five times", func(t *testing.T) {
-		result := Repeater("a")
-		expected := "aaaaa"
+	t.Run("given one character, with repetitions number set to five, should return five times", func(t *testing.T) {
+		result := Repeater("a", 6)
+		expected := "aaaaaa"
+
+		assertCorrectMessage(t, result, expected)
+	})
+
+	t.Run("given one character, with repetitions number set to fifteen, should return fifteen times", func(t *testing.T) {
+		result := Repeater("a", 15)
+		expected := "aaaaaaaaaaaaaaa"
 
 		assertCorrectMessage(t, result, expected)
 	})
@@ -23,6 +30,6 @@ func TestInteraction(t *testing.T) {
 
 func BenchmarkRepetir(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Repeater("a")
+		Repeater("a", 5)
 	}
 }
