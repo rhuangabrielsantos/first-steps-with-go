@@ -9,7 +9,7 @@ Repository for my first adventures in go, based on repository [lern-go-with-test
 - **[x] Hello world** - Declaring variables, constants, if/else statements, switch, write your first go program and write your first test. Sub-test syntax and closures.
 - **[x] Integers** - Further Explore function declaration syntax and learn new ways to improve the documentation of your code.
 - **[x] Interations** - Learn about for and benchmarking.
-- **[..] Arrays and slices** - Learn about arrays, slices, len, varargs, range and test coverage.
+- **[x] Arrays and slices** - Learn about arrays, slices, len, varargs, range and test coverage.
 - **[..] Structs, methods & interfaces** - Learn about struct, methods, interface and table driven tests.
 - **[..] Pointers & erros** - Learn about pointers and errors.
 - **[..] Maps** - Learn about storing values in the map data structure.

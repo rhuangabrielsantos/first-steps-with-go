@@ -51,4 +51,3 @@ func TestSumAllTails(t *testing.T) {
 	})
 
 }
-
